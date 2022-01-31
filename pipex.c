@@ -22,6 +22,7 @@ int	main(int argc, char **argv, char **envp)
 {
 	int		fd_pipe[2];
 	int		p;
+	int		status;
 
 	check(argc);
 	pipe(fd_pipe);
@@ -40,6 +41,7 @@ int	main(int argc, char **argv, char **envp)
 		else
 			fd_c(fd_pipe);
 	}	
-	waitpid(p, NULL, 0);
+	wait(&status);
+	wait(&status);
 	return (0);
 }
