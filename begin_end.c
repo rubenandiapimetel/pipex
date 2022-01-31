@@ -37,8 +37,7 @@ void	end(char **argv, char **envp, int fd_pipe[2])
 
 	close(fd_pipe[1]);
 	dup2(fd_pipe[0], STDIN_FILENO);
-	fd_out = open(argv[4], O_WRONLY | O_CREAT | O_TRUNC | O_APPEND,
-			S_IRWXU);
+	fd_out = open(argv[4], O_RDWR | O_CREAT | O_TRUNC | S_IRWXU);
 	dup2(fd_out, STDOUT_FILENO);
 	matrix_argv2 = ft_split(argv[3], ' ');
 	bin = find_bin(matrix_argv2[0], envp);
