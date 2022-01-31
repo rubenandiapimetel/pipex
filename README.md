@@ -1,10 +1,16 @@
 # pipex
 
 
-Recrea la funcion getline d C
+README.md
+Replica el comportamiento de un pipe en la Shell mediante un pequeño programa
 
-hacer make
+Ejecutar el comnado make
 
-Usar la funcion int get_next_line(int filedescr, char **buffer) por cada linea leida
+Introducir comandos de la siguiente manera
 
-retorna 0 cuando se han leido todas las lineas.
+Para: $> < archivo1 comando1 | comando2 > archivo2
+
+        $> < initfile grep a1 | wc > outfile`
+Escribir: $> ./pipex file "comando1" "comando2" outfile
+
+        $> ./pipex initfile "greap a1" "wc" outfile
