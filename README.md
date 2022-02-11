@@ -12,4 +12,4 @@ Para: $> < archivo1 comando1 | comando2 > archivo2
         $> < initfile grep a1 | wc > outfile`
 Escribir: $> ./pipex file "comando1" "comando2" outfile
 
-        $> ./pipex initfile "greap a1" "wc" outfile
+         $> ./pipex initfile "greap a1" "wc" outfile
