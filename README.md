@@ -1,7 +1,6 @@
 # pipex
 
 
-README.md
 Replica el comportamiento de un pipe en la Shell mediante un pequeño programa
 
 Ejecutar el comnado make
