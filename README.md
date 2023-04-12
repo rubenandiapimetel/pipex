@@ -9,7 +9,7 @@ Ejecutar el comnado make
 
 Introducir comandos de la siguiente manera
 
-SI QUIERES: $> < archivo1 comando1 | comando2 > archivo2
+SI QUISIERAS: $> < archivo1 comando1 | comando2 > archivo2
 
         $> < initfile grep a1 | wc > outfile
 ESCRIBE: $> ./pipex file "comando1" "comando2" outfile
