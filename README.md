@@ -15,3 +15,5 @@ SI QUIERES: $> < archivo1 comando1 | comando2 > archivo2
 ESCRIBE: $> ./pipex file "comando1" "comando2" outfile
 
          $> ./pipex initfile "greap a1" "wc" outfile
+         
+EJEMPLO OUTPUT: No such file o directory
